@@ -1,0 +1,188 @@
+@charset "UTF-8";
+
+:root {
+    --primary-color: #8C4130;
+    --secondary-color: #A6511F;
+    --tertiary-color: #BF7D2C;
+    --quaternary-color: #818C2A;
+    --quinary-color: #F2BC57;
+    --title-color: #343a40;
+    --text-color: #262626;
+    --background-color: #DAD7CD;
+
+    --font-default: "Roboto", sans-serif;
+    --font-title: "DM Serif Text", serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-default);
+    font-style: normal;
+}
+
+.donate {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 10%;
+
+    header {
+        text-align: center;
+        padding-top: 15%;
+        padding-bottom: 10%;
+
+        h1 {
+            font-family: var(--font-title);
+            font-size: 2.5em;
+            font-weight: 400;
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+
+        p {
+            color: var(--text-color);
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+    }
+
+    .donation-options {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        gap: 30px;
+
+        section {
+            width: 400px;
+            padding: 15px;
+            text-align: center;
+            border-radius: 10px;
+            border: 2px solid var(--quinary-color);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+            h2 {
+                font-family: var(--font-title);
+                color: var(--title-color);
+                margin-bottom: 10px;
+            }
+
+            p {
+                color: var(--text-color);
+                margin-bottom: 10px;
+            }
+
+            ul {
+                list-style: symbols(disc);
+                text-align: start;
+                padding: 20px;
+                margin: 0;
+
+                li {
+                    margin: 5px 0;
+                    color: var(--text-color);
+                }
+            }
+
+            form {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                button {
+                    display: flex;
+                    background-color: var(--primary-color);
+                    color: white;
+                    border: none;
+                    padding: 10px 15px;
+                    border-radius: 5px;
+                    cursor: pointer;
+                    transition: background-color 0.3s;
+
+                    &:hover {
+                        background-color: var(--secondary-color);
+                    }
+                }
+            }
+        }
+    }
+}
+
+.impact {
+    background-color: var(--tertiary-color);
+    padding: 50px 20px;
+    text-align: center;
+
+    header {
+        margin-bottom: 30px;
+
+        h1 {
+            font-family: var(--font-title);
+            color: white;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        p {
+            color: #fff;
+            font-size: 1.2em;
+        }
+    }
+
+    section {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        padding: 20px;
+
+        aside {
+            border-left: 1px solid var(--title-color);
+            padding: 20px;
+            text-align: start;
+
+            h2 {
+                font-family: var(--font-title);
+                font-size: 2em;
+                color: #000;
+                margin-bottom: 20px;
+            }
+
+            p {
+                color: #fff;
+                font-size: 1.2em;
+                margin-bottom: 30px;
+            }
+        }
+    }
+}
+
+.join-us {
+    padding: 30px 20px;
+    text-align: center;
+
+    h2 {
+        font-family: var(--font-title);
+        margin-bottom: 15px;
+    }
+
+    p {
+        margin-bottom: 20px;
+        font-size: 1.1em;
+    }
+
+    form {
+        display: flex;
+        justify-content: center;
+
+        button {
+            background-color: var(--quinary-color);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    }
+}
