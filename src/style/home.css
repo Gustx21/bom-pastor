@@ -6,7 +6,7 @@
     --tertiary-color: #BF7D2C;
     --quaternary-color: #818C2A;
     --quinary-color: #F2BC57;
-    --title-color: #343a40;
+    --title-color: #0D0D0D;
     --text-color: #262626;
     --background-one: #E6E0D5;
     --background-two: #FFF9EE;
@@ -261,7 +261,7 @@
     p {
         font-size: 1.2rem;
         margin-bottom: 20px;
-        color: #000;
+        color: var(--text-color);
         text-align: center;
     }
 
@@ -355,6 +355,7 @@
 
         img {
             width: 70%;
+            object-fit: cover;
         }
 
         section {
