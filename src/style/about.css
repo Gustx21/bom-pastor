@@ -32,7 +32,7 @@
 
     figure {
         margin-top: 80px;
-    
+
         img {
             width: 100%;
             height: 75vh;
@@ -79,7 +79,7 @@
     display: grid;
     grid-template-columns: repeat(2, auto);
     grid-template-rows: auto;
-    grid-template-areas: 
+    grid-template-areas:
         "header mission"
         "header value";
     padding: 120px;
@@ -89,7 +89,7 @@
     header {
         grid-area: header;
         margin-bottom: 20px;
-        
+
         h1 {
             font-family: var(--font-title);
             text-align: start;
@@ -109,7 +109,7 @@
         grid-area: mission;
         text-align: start;
         padding: 20px;
-        
+
         h3 {
             font-size: 1.6rem;
             color: var(--quaternary-color);
@@ -127,7 +127,7 @@
         grid-area: value;
         text-align: start;
         padding: 20px;
-        
+
         h3 {
             font-size: 1.6rem;
             color: var(--quaternary-color);
@@ -142,7 +142,37 @@
     }
 }
 
-.team {}
+.team {
+    display: flex;
+    flex-direction: column;
+    margin: 8em 0;
+
+    header {
+        text-align: start;
+        padding-left: 20px;
+
+        h2 {
+            font-family: var(--font-title);
+            font-size: 2rem;
+        }
+    }
+
+    .team-list {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        gap: 20px;
+        padding: 20px;
+
+        .team-member {
+            padding: 15px;
+            border: 1.5px solid #000;
+            border-radius: 15px;
+            width: 300px;
+        }
+    }
+}
 
 .solidariety {
     display: flex;
@@ -174,21 +204,40 @@
     }
 }
 
-.supporters {
+.testimonials {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding: 50px 30px;
 
-    h2 {
-        text-align: center;
-        font-size: 2.5rem;
-        color: var(--title-color);
+    header {
         margin-bottom: 20px;
+
+        h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            color: var(--title-color);
+            margin-bottom: 20px;
+        }
     }
 
-    img {
-        width: 70%;
+    .testimonials-list {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        overflow-x: scroll;
+        scrollbar-width: none;
+        column-gap: 25px;
+
+        article {
+            border: 1px solid #ccc;
+            border-radius: 15px;
+            padding: 20px;
+            flex-shrink: 0;
+            width: 50%;
+            height: auto;
+        }
     }
 }
 
@@ -199,9 +248,11 @@
 
         main {
             padding: 1rem;
+
             h1 {
                 font-size: 2.5rem;
             }
+
             p {
                 font-size: 1rem;
             }
@@ -216,13 +267,15 @@
         padding: 20px;
         grid-template-columns: auto;
         grid-template-rows: auto auto auto;
-        grid-template-areas: 
+        grid-template-areas:
             "header"
             "mission"
             "value"
         ;
 
-        header, .mission, .values {
+        header,
+        .mission,
+        .values {
             text-align: start;
 
             p {
@@ -242,7 +295,8 @@
             }
         }
 
-        .mission, .values {
+        .mission,
+        .values {
             h3 {
                 font-size: 1.3rem;
             }
@@ -256,5 +310,5 @@
     .supporters img {
         width: 90%;
     }
-    
+
 }
