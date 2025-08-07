@@ -1,19 +1,5 @@
 @charset "UTF-8";
 
-:root {
-    --primary-color: #8C4130;
-    --secondary-color: #A6511F;
-    --tertiary-color: #BF7D2C;
-    --quaternary-color: #818C2A;
-    --quinary-color: #F2BC57;
-    --title-color: #343a40;
-    --text-color: #6c757d;
-    --background-color: #DAD7CD;
-
-    --font-default: "Roboto", sans-serif;
-    --font-title: "DM Serif Text", serif;
-}
-
 .hero {
     width: 100%;
     height: 100vh;

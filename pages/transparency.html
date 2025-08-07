@@ -32,25 +32,36 @@
 </head>
 <body>
     <nav>
+        <!-- Hamburguer nav -->
         <nav class="hamburger" id="hamburger">
             <img src="../src/assets/icon/espirito-santo.png" alt="Logo do Instituto Bom Pastor">
-            <img src="../src/assets/icon/menu.svg" alt="Logo de Menu">
+            <img src="../src/assets/icon/menu.svg" alt="Icon Menu">
         </nav>
         <nav class="menu">
             <img src="../src/assets/icon/espirito-santo.png" alt="Logo do Instituto Bom Pastor">
-            <a href="../home.html" target="_parent">Início</a>
+            <a href="../home.html" target="_self">Início</a>
             <a href="about.html" target="_parent">Sobre Nós</a>
-            <a href="projects.html">Projetos</a>
+            <details class="dropdown">
+                <summary>Projetos</summary>
+                <ul class="submenu">
+                    <li><a href="./arandu.html" target="_parent">Missão Arandu</a></li>
+                    <li><a href="./kolbe.html" target="_parent">Missão Kolbe</a></li>
+                    <li><a href="./tekoha.html"  target="_parent">Missão Tekohá</a></li>
+                </ul>
+            </details>
             <a href="transparency.html" target="_parent">Transparência</a>
-            <a href="mailto:missionariosbompastor@gmail.com" target="_blank" rel="noopener noreferrer">E-mail</a>
+            <a href="mailto:missionariosbompastor@gmail.com" target="_blank">E-mail</a>
 
             <button type="button" class="donate-btn">Doe Agora</button>
         </nav>
     </nav>
 
     <header class="hope">
-        <h2>Confie no<br>nosso trabalho!</h2>
-        <p>Nós dedicamos todo nosso trabalho para fornecer confiança para todos, e utilizar com eficiência todos os recursos que são fornecidos por nossos doadores. Focando em manter todos atualizados com informações e relatóriosde atividades para possa acompanhar como seus recursos.</p>
+        <img src="../src/assets/pexels-rdne-8083740.jpg" alt="Imagem da comunidade">
+        <main>
+            <h2>Confie no <br> nosso trabalho!</h2>
+            <p>Nós dedicamos todo nosso trabalho para fornecer confiança para todos, e utilizar com eficiência todos os recursos que são fornecidos por nossos doadores. Focando em manter todos atualizados com informações e relatóriosde atividades para possa acompanhar como seus recursos.</p>
+        </main>
     </header>
 
     <section class="conduct">
@@ -128,8 +139,8 @@
         </figure>
         <nav>
             <h3>Institucional</h3>
-            <a href="pages/about.html" target="_parent">Sobre Nós</a>
-            <a href="pages/projects.html" target="_parent">Missão</a>
+            <a href="about.html" target="_parent">Sobre Nós</a>
+            <a href="projects.html" target="_parent">Missão</a>
         </nav>
         <nav>
             <h3>Contatos</h3>

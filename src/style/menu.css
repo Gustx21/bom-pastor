@@ -52,19 +52,6 @@
     .dropdown[open] .submenu {
         display: block;
     }
-
-    button {
-        background-color: #F2BC57;
-        color: #fff;
-        border: none;
-        padding: 10px 15px;
-        border-radius: 5px;
-        cursor: pointer;
-    }
-
-    button:hover {
-        background-color: darken(#F2BC57, 10%);
-    }
 }
 
 .hamburger {
