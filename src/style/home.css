@@ -29,7 +29,6 @@
     justify-content: center;
     text-align: center;
     height: auto;
-    margin: 50px 0;
 
     h2 {
         font-family: var(--font-title);
@@ -64,20 +63,23 @@
     .project-list {
         display: flex;
         flex-direction: column;
-        gap: 20px;
+        align-items: center;
+        row-gap: 20px;
         padding: 20px;
     
         section {
             border: 2px solid #8c8f91;
             border-radius: 10px;
             padding: 20px;
+            width: 80%;
     
             img {
-                width: 100%;
-                height: auto;
+                width: 60%;
+                height: 50vh;
                 border-radius: 10px;
                 margin-bottom: 20px;
                 filter: brightness(0.9);
+                object-fit: cover;
             }
     
             h3 {
@@ -91,6 +93,7 @@
             h4 {
                 font-family: var(--font-title);
                 font-size: 1.5rem;
+                margin-top: 20px;
                 margin-bottom: 20px;
                 color: var(--quinary-color);
                 text-align: start;
@@ -128,7 +131,7 @@
     flex-direction: column;
     height: max-content;
     background: var(--background-two);
-    margin: calc(40px + 60px) 0;
+    margin: 50px 0;
     padding: 5%;
 
     h2 {
@@ -230,7 +233,7 @@
     }
 }
 
-@media (max-width: 768px) {
+@media (min-width: 400px) and (max-width: 767px) {
     .about {
         height: max-content;
         padding: 40px;
@@ -244,35 +247,31 @@
             font-size: 1rem;
             width: 100%;
         }
-
-        button {
-            padding: 8px 16px;
-        }
     }
 
     .projects {
         h2 {
             font-size: 1.5rem;
         }
-    }
+    
+        .project-list {
+            padding: 0;
+    
+            section {
+                padding: 15px;
 
-    .project-list {
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-
-        article {
-            padding: 15px;
-
-            h3 {
-                font-size: 1.2rem;
-            }
-
-            p {
-                font-size: 1rem;
-            }
-
-            nav {
-                a {
-                    font-size: 0.9rem;
+                img {
+                    width: 100%;
+                    height: 30vh;
+                    margin-bottom: 10px;
+                }
+    
+                h3, h4 {
+                    font-size: 1.2rem;
+                }
+    
+                p {
+                    font-size: 1rem;
                 }
             }
         }
@@ -283,10 +282,6 @@
 
         h2 {
             font-size: 1.5rem;
-        }
-
-        button {
-            padding: 8px 16px;
         }
     }
 
@@ -304,32 +299,6 @@
         }
     }
 
-    .community {
-        grid-template-columns: 1fr;
-        grid-template-rows: auto auto;
-
-        img {
-            width: 70%;
-            object-fit: cover;
-        }
-
-        section {
-            padding: 10px;
-        }
-
-        h2 {
-            font-size: 1.5rem;
-        }
-
-        p {
-            font-size: 1rem;
-        }
-
-        button {
-            padding: 8px 16px;
-        }
-    }
-
     .donate {
         padding: 2rem;
 
@@ -343,6 +312,75 @@
 
         button {
             padding: 8px 16px;
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    .about {
+        padding: 60px;
+        margin: 50px 0;
+
+        h2 {
+            font-size: 1.8rem;
+        }
+
+        p {
+            font-size: 1.1rem;
+            width: 100%;
+        }
+    }
+
+    .projects {
+        height: min-content;
+
+        h2 {
+            font-size: 1.8rem;
+        }
+
+        .project-list {
+            padding: 0;
+
+            section {
+                padding: 15px;
+                width: 90%;
+
+                img {
+                    width: 100%;
+                    height: 60vh;
+                    margin-bottom: 10px;
+                }
+    
+                h3, h4 {
+                    font-size: 1.5rem;
+                }
+    
+                p {
+                    font-size: 1.1rem;
+                }
+            }
+        }
+    }
+
+    .achievements {
+        padding: 5rem;
+
+        h2 {
+            font-size: 1.8rem;
+        }
+
+        .achievements-list {
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+            article {
+                h3 {
+                    font-size: 1.5rem;
+                }
+
+                p {
+                    font-size: 1.2rem;
+                }
+            }
         }
     }
 }

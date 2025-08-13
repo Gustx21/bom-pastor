@@ -2,9 +2,10 @@
 
 .hero {
     width: 100%;
-    height: 100vh;
+    height: 80vh;
     position: relative;
     overflow: hidden;
+    margin-bottom: 50px;
 
     .overlay {
         display: block;
@@ -32,22 +33,8 @@
 /* Corrigir */
 @media (max-width: 768px) {
     .hero {
-        height: 40vh;
-
-        .overlay {
-
-            main {
-                padding: 0;
-
-                h1 {
-                    font-size: 1.5rem;
-                    margin-top: 0;
-                }
-                p {
-                    font-size: 1rem;
-                    margin-top: 5px;
-                }
-            }
-        }
+        height: 50vh;
+        margin: 0;
+        padding: 0;
     }
 }

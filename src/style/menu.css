@@ -2,7 +2,7 @@
 
 .menu {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     list-style: none;
     position: fixed;
@@ -87,6 +87,7 @@
         width: 100%;
         background-color: #f8f9fa;
         flex-direction: column;
+        padding: 20px 0;
 
         img {
             display: none;
