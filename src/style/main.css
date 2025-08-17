@@ -30,11 +30,29 @@
     .overlay.active { opacity: 1; z-index: 2; }
 }
 
-/* Corrigir */
-@media (max-width: 768px) {
+@media (min-width: 400px) and (max-width: 767px) {
     .hero {
         height: 50vh;
-        margin: 0;
+        margin-bottom: 0;
+
+        .overlay {
+            img {
+                margin-top: 0;
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 992px){
+    .hero {
+        height: 55vh;
+        margin-bottom: 0;
         padding: 0;
+
+        .overlay {
+            img {
+                margin-top: 10%;
+            }
+        }
     }
 }
