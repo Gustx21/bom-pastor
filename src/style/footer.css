@@ -2,26 +2,18 @@
 
 .info-footer {
     display: grid;
-    grid-template-columns: repeat(4, 25%);
+    grid-template-columns: repeat(3, 33%);
     grid-template-rows: auto auto;
     grid-template-areas: 
-    "logo institute contact transparency"
-    "logo institute contact transparency"
-    "social social social social";
+    "logo contact transparency"
+    "logo contact transparency";
     padding: 50px;
     background-color: #fff;
     border-top: 2px solid #dee2e6;
 
     figure { grid-area: logo; }
-    .institute { grid-area: institute; }
     .contact { grid-area: contact; }
     .transparency { grid-area: transparency; }
-    footer { 
-        grid-area: social;
-        display: block;
-        margin: 20px;
-        padding: 10px;
-    }
 
     img {
         width: 40px;
@@ -53,8 +45,8 @@
         grid-template-rows: auto auto auto;
         grid-template-areas: 
             "logo logo"
-            "institute contact"
-            "transparency social";
+            "contact contact"
+            "transparency transparency";
         padding: 30px;
         text-align: center;
         line-height: 1;
@@ -72,12 +64,7 @@
             margin-top: 20px;
         }
 
-        .institute { grid-area: institute; }
         .contact { grid-area: contact; }
         .transparency { grid-area: transparency; }
-
-        footer {
-            grid-area: social;
-        }
     }
 }

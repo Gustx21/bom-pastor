@@ -11,8 +11,8 @@
     --background-one: #E6E0D5;
     --background-two: #FFF9EE;
 
-    --font-default: "Roboto", sans-serif;
-    --font-title: "DM Serif Text", serif;
+    --font-default: 'Roboto', sans-serif;
+    --font-title: 'Courier New', Courier, monospace;
 }
 
 * {
@@ -86,9 +86,8 @@
                 height: 50vh;
                 border-radius: 10px;
                 margin-bottom: 20px;
-                filter: brightness(0.9);
                 margin: 10px;
-                object-fit: cover;
+                object-fit: contain;
             }
     
             h3 {
@@ -118,7 +117,7 @@
             ul {
                 margin: 20px 0;
                 padding: 16px 24px;
-                background: var(--background-one);
+                background: #FFDAB9;
                 border-radius: 8px;
                 box-shadow: 0 1px 4px rgba(0,0,0,0.04);
                 list-style: disc inside;
@@ -139,7 +138,7 @@
     display: flex;
     flex-direction: column;
     height: max-content;
-    background: var(--background-two);
+    background: #FFFACD;
     margin: 50px 0;
     padding: 5%;
 
@@ -169,8 +168,8 @@
     article {
         text-align: center;
         align-content: center;
-        background-color: var(--background-one);
-        border: 1px solid #dee2e6;
+        background-color: #FFDAB9;
+        border: none;
         border-radius: 10px;
         padding: 20px;
         height: 30vh;
@@ -206,7 +205,7 @@
     justify-content: center;
     height: max-content;
     padding: 5rem;
-    background-color: var(--background-two);
+    background-color: #fffacd;
 
     h2 {
         font-family: var(--font-title);
@@ -227,7 +226,7 @@
         padding: 20px;
         margin: 0 auto;
         max-width: 600px;
-        background: var(--background-one);
+        background: #FFDAB9;
         border-radius: 10px;
         box-shadow: 0 2px 8px rgba(0,0,0,0.05);
         list-style: disc inside;
